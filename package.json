@@ -1,7 +1,7 @@
 {
   "name": "mirror-image-generator",
   "version": "0.0.1",
-  "description": "App to generate an image mirroring the user provided",
+  "description": "A tiny app for a very specific mirroring use case for one person",
   "main": "src/app.ts",
   "type": "commonjs",
   "author": {

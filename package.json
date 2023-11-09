@@ -1,0 +1,13 @@
+{
+  "name": "mirror-image-generator",
+  "version": "0.0.1",
+  "description": "App to generate an image mirroring the user provided",
+  "main": "src/app.ts",
+  "scripts": {
+    "build": "tsc --build --clean && tsc && copyfiles --flat src/**/*.html dist"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "typescript": "^5.2.2"
+  }
+}

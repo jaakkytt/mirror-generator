@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
-    "module": "NodeNext",
+    "module": "CommonJS",
     "target": "ESNext",
-    "moduleResolution": "NodeNext",
-    "strict": true
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "isolatedModules": true
   },
   "include": [
     "./src/**/*.ts"

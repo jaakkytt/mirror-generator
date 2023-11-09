@@ -3,16 +3,19 @@
   "version": "0.0.1",
   "description": "App to generate an image mirroring the user provided",
   "main": "src/app.ts",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "build": "tsc --build --clean && tsc && copyfiles --flat src/**/*.html dist",
+    "build": "webpack && copyfiles --flat src/**/*.html dist",
     "lint": "eslint ./src --fix --ext .ts"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.10.0",
-    "eslint": "^8.53.0",
     "copyfiles": "^2.4.1",
-    "typescript": "^5.2.2"
+    "eslint": "^8.53.0",
+    "ts-loader": "^9.5.0",
+    "typescript": "^5.2.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   }
 }

@@ -4,6 +4,11 @@
   "description": "App to generate an image mirroring the user provided",
   "main": "src/app.ts",
   "type": "commonjs",
+  "author": {
+    "email": "jaak.kytt@gmail.com",
+    "name": "Jaak Kütt",
+    "url": "https://jaak.kytt.ee"
+  },
   "scripts": {
     "build": "webpack && copyfiles --flat src/**/*.html dist",
     "lint": "eslint ./src --fix --ext .ts"

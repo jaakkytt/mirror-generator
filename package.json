@@ -1,6 +1,6 @@
 {
   "name": "mirror-image-generator",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A tiny app for a very specific mirroring use case for one person",
   "main": "src/app.ts",
   "type": "commonjs",
@@ -10,7 +10,7 @@
     "url": "https://jaak.kytt.ee"
   },
   "scripts": {
-    "build": "webpack && copyfiles --flat src/**/*.html dist",
+    "build": "webpack && copyfiles --exclude src/**/*.ts --flat src/** dist",
     "lint": "eslint ./src --fix --ext .ts"
   },
   "devDependencies": {

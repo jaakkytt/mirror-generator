@@ -1,4 +1,4 @@
-export function draw(src: string, canvas: HTMLCanvasElement): Promise<string> {
+export function draw(src: string, canvas: HTMLCanvasElement): Promise<HTMLCanvasElement> {
     return new Promise((resolve, reject) => {
         const context = canvas.getContext('2d')
         if (!context) {
@@ -22,7 +22,7 @@ export function draw(src: string, canvas: HTMLCanvasElement): Promise<string> {
             context.drawImage(image, image.width * -4, 0)
             context.restore()
 
-            resolve(src)
+            resolve(canvas)
         }
 
         image.src = src

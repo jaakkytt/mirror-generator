@@ -1,12 +1,12 @@
+const duration = 1000
+let id: string | number | NodeJS.Timeout | undefined
+
 function forceDownload(canvas: HTMLCanvasElement) {
     const a = document.createElement('a')
     a.href = canvas.toDataURL('image/png')
     a.download = 'download.png'
     a.click()
 }
-
-let id: string | number | NodeJS.Timeout | undefined
-const duration = 1000
 
 export function setup(canvas: HTMLCanvasElement) {
     canvas.addEventListener('touchstart', () => {
